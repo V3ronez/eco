@@ -22,9 +22,9 @@ export class SendNotification {
     const { content, recipientId, category } = request;
 
     const notification = new Notification({
-      category,
       recipientId,
       content: new Content(content),
+      category,
     });
 
     await this.notificationRepository.create(notification);
