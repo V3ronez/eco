@@ -10,7 +10,7 @@ interface CountRecipientNotificationResponse {
 }
 
 @Injectable()
-export class CancelNotification {
+export class CountNotification {
   constructor(private notificationRepository: NotificationRepository) {}
   async execute(
     request: CountRecipientNotificationRequest,
